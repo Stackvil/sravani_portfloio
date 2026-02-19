@@ -23,7 +23,7 @@ const Intro = () => {
                     transition={{ duration: 0.8, delay: 0.3 }}
                     className="text-xl md:text-2xl text-gray-300 leading-relaxed max-w-3xl mx-auto font-light"
                 >
-                    Software Developer at <span className="text-white font-semibold">Stackvil Technologies Pvt Ltd</span>.
+                    Front-end Developer & CMO at <span className="text-white font-semibold">Stackvil Technologies Pvt Ltd</span>.
                     I design and build <span className="text-accent">scalable web, mobile, and enterprise solutions</span> for real-world businesses.
                 </motion.p>
             </div>

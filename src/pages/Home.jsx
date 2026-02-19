@@ -42,7 +42,7 @@ const Hero = () => {
                     className="mb-8"
                 >
                     <p className="text-xl md:text-2xl text-white font-medium mb-2">
-                        Software Developer, Stackvil Technologies Pvt Ltd
+                        Front-end Developer & CMO, Stackvil Technologies Pvt Ltd
                     </p>
                     <p className="text-lg text-gray-400 font-light">
                         Building scalable digital products for real businesses.
@@ -72,7 +72,7 @@ const AboutPreview = () => (
         <div className="max-w-4xl mx-auto px-6 text-center">
             <h2 className="text-3xl font-bold text-white mb-6">Passionate Developer</h2>
             <p className="text-gray-400 text-lg leading-relaxed mb-8">
-                As a Software Developer at Stackvil Technologies, I specialize in building robust, scalable, and high-performance digital solutions. I combine technical expertise with a keen eye for design to deliver exceptional user experiences.
+                As a Front-end Developer & CMO at Stackvil Technologies, I specialize in building robust, scalable, and high-performance digital solutions. I combine technical expertise with a keen eye for design to deliver exceptional user experiences.
             </p>
             <Link to="/projects" className="text-accent hover:text-white font-medium transition-colors inline-flex items-center gap-2">
                 View All Projects <ArrowRight size={16} />
