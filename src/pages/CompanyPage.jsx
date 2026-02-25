@@ -188,6 +188,6 @@ const FactoryIcon = () => <Building2 className="text-orange-400" size={32} />;
 const GraduationCapIcon = () => <Globe className="text-green-400" size={32} />;
 const BanknoteIcon = () => <ShieldCheck className="text-yellow-400" size={32} />;
 const HeartPulseIcon = () => <Cpu className="text-red-400" size={32} />;
-const TruckIcon = () => <Rocket className="text-purple-400" size={32} />;
+const TruckIcon = () => <Rocket className="text-blue-400" size={32} />;
 
 export default CompanyPage;

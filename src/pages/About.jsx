@@ -93,7 +93,7 @@ const Timeline = () => {
                             transition={{ delay: idx * 0.2 }}
                             className="relative pl-12 md:pl-0"
                         >
-                            <div className="absolute -left-[9px] top-0 w-4 h-4 rounded-full bg-accent shadow-[0_0_10px_#8b5cf6]" />
+                            <div className="absolute -left-[9px] top-0 w-4 h-4 rounded-full bg-accent shadow-[0_0_10px_#2563eb]" />
                             <div className={`md:flex items-start justify-between ${idx % 2 === 0 ? 'md:flex-row-reverse' : ''} gap-8 group`}>
                                 <div className="hidden md:block w-1/2" />
                                 <div className={`md:w-1/2 ${idx % 2 === 0 ? 'md:text-right' : 'md:text-left'}`}>
@@ -139,7 +139,7 @@ const Skills = () => {
                                         initial={{ width: 0 }}
                                         whileInView={{ width: `${skill.level}%` }}
                                         transition={{ duration: 1.5, ease: "easeOut" }}
-                                        className="h-full bg-accent shadow-[0_0_10px_#8b5cf6]"
+                                        className="h-full bg-accent shadow-[0_0_10px_#2563eb]"
                                     />
                                 </div>
                             </div>

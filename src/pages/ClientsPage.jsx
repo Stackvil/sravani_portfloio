@@ -4,7 +4,7 @@ import { Building2, ShoppingBag, Car, GraduationCap, Gem, ShoppingCart, Newspape
 
 const BrandLogo = ({ Icon, name }) => (
     <div className="flex flex-col items-center gap-4 group min-w-[200px] hover:scale-110 transition-transform duration-300 cursor-pointer">
-        <div className="w-24 h-24 rounded-2xl bg-white/5 border border-white/10 flex items-center justify-center group-hover:bg-accent/20 group-hover:border-accent group-hover:shadow-[0_0_30px_rgba(139,92,246,0.3)] transition-all duration-500">
+        <div className="w-24 h-24 rounded-2xl bg-white/5 border border-white/10 flex items-center justify-center group-hover:bg-accent/20 group-hover:border-accent group-hover:shadow-[0_0_30px_rgba(37,99,235,0.3)] transition-all duration-500">
             <Icon className="text-gray-500 group-hover:text-accent group-hover:brightness-125 transition-colors duration-500" size={40} />
         </div>
         <span className="text-sm font-medium text-gray-400 group-hover:text-white uppercase tracking-widest transition-colors duration-300 text-center">{name}</span>

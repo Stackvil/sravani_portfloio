@@ -177,7 +177,7 @@ export const projects = [
         tagline: "High-Performance News Platform",
         desc: "High-traffic news and media content platform optimized for speed, SEO, and ad revenue handling.",
         tech: ["Next.js", "GraphQL", "Redis"],
-        image: "from-purple-900 to-violet-900",
+        image: "from-blue-900 to-cyan-900",
         icon: <Layout size={32} />,
         problem: "Previous site crashed during high-traffic news events and had poor SEO rankings.",
         solution: "A Next.js powered static site with incremental regeneration. Optimized for Core Web Vitals to handle massive traffic spikes and rank high on Google.",

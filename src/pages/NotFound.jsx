@@ -16,7 +16,7 @@ const NotFound = () => {
                 transition={{ duration: 0.8 }}
                 className="relative z-10 text-center"
             >
-                <div className="mb-8 inline-flex p-6 rounded-3xl bg-white/5 border border-white/10 text-accent shadow-[0_0_50px_rgba(139,92,246,0.1)]">
+                <div className="mb-8 inline-flex p-6 rounded-3xl bg-white/5 border border-white/10 text-accent shadow-[0_0_50px_rgba(37,99,235,0.1)]">
                     <ShieldAlert size={80} strokeWidth={1.5} />
                 </div>
 

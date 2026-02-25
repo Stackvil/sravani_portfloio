@@ -144,7 +144,7 @@ const Services = () => {
                             viewport={{ once: true }}
                             transition={{ delay: idx * 0.1 }}
                         >
-                            <GlassCard className="p-8 h-full group hover:shadow-[0_0_30px_-10px_rgba(139,92,246,0.2)]">
+                            <GlassCard className="p-8 h-full group hover:shadow-[0_0_30px_-10px_rgba(37,99,235,0.2)]">
                                 <div className="mb-6 bg-white/5 w-16 h-16 rounded-2xl flex items-center justify-center group-hover:bg-white/10 transition-colors">
                                     {service.icon}
                                 </div>
@@ -166,7 +166,7 @@ const Projects = () => {
             category: "SaaS Platform",
             description: "A high-fidelity analytics dashboard for enterprise clients, featuring real-time data visualization.",
             tech: ["React", "D3.js", "TypeScript"],
-            image: "from-purple-900 to-indigo-900",
+            image: "from-blue-900 to-slate-900",
         },
         {
             title: "FinTech Solution",
@@ -264,7 +264,7 @@ const Contact = () => {
                     <p className="text-xl text-gray-400 mb-12 max-w-2xl mx-auto">
                         Ready to elevate your digital presence? I am currently accepting new enterprise contracts and freelance opportunities.
                     </p>
-                    <a href="mailto:lakamuthotisravani@gmail.com" className="inline-block px-10 py-5 bg-accent text-white font-bold rounded-full text-lg shadow-[0_0_40px_-10px_rgba(139,92,246,0.5)] hover:shadow-[0_0_60px_-10px_rgba(139,92,246,0.7)] hover:scale-105 transition-all duration-300">
+                    <a href="mailto:lakamuthotisravani@gmail.com" className="inline-block px-10 py-5 bg-accent text-white font-bold rounded-full text-lg shadow-[0_0_40px_-10px_rgba(37,99,235,0.5)] hover:shadow-[0_0_60px_-10px_rgba(37,99,235,0.7)] hover:scale-105 transition-all duration-300">
                         Start a Project
                     </a>
                 </motion.div>

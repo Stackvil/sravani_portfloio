@@ -110,7 +110,7 @@ const ServicesPage = () => {
                             <div className="absolute inset-0 bg-gradient-to-br from-accent/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
 
                             <div className="relative z-10">
-                                <div className="mb-6 inline-flex p-3 rounded-xl bg-white/5 text-accent group-hover:bg-accent group-hover:text-white transition-colors duration-300 shadow-[0_0_15px_rgba(139,92,246,0.1)] group-hover:shadow-[0_0_25px_rgba(139,92,246,0.4)]">
+                                <div className="mb-6 inline-flex p-3 rounded-xl bg-white/5 text-accent group-hover:bg-accent group-hover:text-white transition-colors duration-300 shadow-[0_0_15px_rgba(37,99,235,0.1)] group-hover:shadow-[0_0_25px_rgba(37,99,235,0.4)]">
                                     {service.icon}
                                 </div>
 

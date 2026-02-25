@@ -90,7 +90,7 @@ const ProjectsPage = () => {
             category: "Business",
             desc: "High-traffic news and media content platform optimized for speed, SEO, and ad revenue handling.",
             tech: ["Next.js", "GraphQL", "Redis"],
-            image: "from-purple-900 to-violet-900",
+            image: "from-blue-900 to-cyan-900",
             icon: <Layout size={32} />
         }
     ];
@@ -128,7 +128,7 @@ const ProjectsPage = () => {
                         onClick={() => setSelectedCategory(cat)}
                         className={`px-6 py-2 rounded-full text-sm font-medium transition-all duration-300 border border-white/10 backdrop-blur-md
                         ${selectedCategory === cat
-                                ? "bg-accent text-white shadow-[0_0_20px_rgba(139,92,246,0.5)] border-accent"
+                                ? "bg-accent text-white shadow-[0_0_20px_rgba(37,99,235,0.5)] border-accent"
                                 : "bg-white/5 text-gray-400 hover:bg-white/10 hover:text-white"}`}
                     >
                         {cat}

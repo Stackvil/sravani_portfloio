@@ -145,7 +145,7 @@ const projectData = {
         title: "Media Website",
         category: "Business",
         tagline: "High-Performance News Platform",
-        heroImage: "from-purple-900 to-violet-900",
+        heroImage: "from-blue-900 to-cyan-900",
         problem: "Previous site crashed during high-traffic news events and had poor SEO rankings.",
         solution: "A Next.js powered static site with incremental regeneration. Optimized for Core Web Vitals to handle massive traffic spikes and rank high on Google.",
         features: [
