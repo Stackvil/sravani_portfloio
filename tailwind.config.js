@@ -7,21 +7,21 @@ export default {
   theme: {
     extend: {
       colors: {
-        primary: "#050511", // Deep Black/Purple
-        secondary: "#11112b", // Rich Midnight Blue
-        card: "rgba(255, 255, 255, 0.03)", // Glass
-        accent: "#8b5cf6", // Violet Neon
-        accentGlow: "#7c3aed", // Deep Violet Glow
-        text: "#e2e8f0", // Light Slate
+        primary: "#020617", // Deep Obsidian Black
+        secondary: "#0f172a", // Midnight Slate
+        card: "rgba(30, 41, 59, 0.4)", // Frosted Navy
+        accent: "#2563eb", // Bold Royal Blue
+        accentGlow: "#3b82f6", // Vibrant Azure Glow
+        text: "#f8fafc", // Ghost White
         muted: "#94a3b8", // Muted Slate
       },
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
-        'hero-gradient': 'linear-gradient(to bottom, #050511, #0f0f2a)',
+        'hero-gradient': 'linear-gradient(to bottom, #020617, #0f172a)',
         'glass-gradient': 'linear-gradient(145deg, rgba(255,255,255,0.05) 0%, rgba(255,255,255,0.01) 100%)',
       },
       fontFamily: {
-        sans: ['Inter', 'sans-serif'],
+        sans: ['Outfit', 'Inter', 'sans-serif'],
         mono: ['JetBrains Mono', 'monospace'],
       },
       animation: {

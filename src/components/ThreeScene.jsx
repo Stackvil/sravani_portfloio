@@ -1,63 +1,84 @@
-import React, { useRef, useState } from 'react';
-import { Canvas, useFrame } from '@react-three/fiber';
-import { Points, PointMaterial, Float, Stars } from '@react-three/drei';
-import * as random from 'maath/random/dist/maath-random.esm';
+import React, { useRef, useMemo } from 'react';
+import { Canvas, useFrame, useThree } from '@react-three/fiber';
+import { Float, MeshDistortMaterial, PerspectiveCamera } from '@react-three/drei';
+import * as THREE from 'three';
 
-function ParticleField(props) {
+function HolographicGrid() {
     const ref = useRef();
-    const [sphere] = useState(() => random.inSphere(new Float32Array(3000), { radius: 1.5 }));
 
-    useFrame((state, delta) => {
+    useFrame((state) => {
+        const t = state.clock.getElapsedTime();
         if (ref.current) {
-            ref.current.rotation.x -= delta / 10;
-            ref.current.rotation.y -= delta / 15;
+            ref.current.position.z = Math.sin(t * 0.2) * 0.5;
         }
     });
 
     return (
-        <group rotation={[0, 0, Math.PI / 4]}>
-            <Points ref={ref} positions={sphere} stride={3} frustumCulled={false} {...props}>
-                <PointMaterial
-                    transparent
-                    color="#8b5cf6"
-                    size={0.003}
-                    sizeAttenuation={true}
-                    depthWrite={false}
-                    opacity={0.6}
-                />
-            </Points>
-        </group>
+        <gridHelper
+            ref={ref}
+            args={[100, 50, "#2563eb", "#0f172a"]}
+            position={[0, -2, 0]}
+            rotation={[Math.PI / 10, 0, 0]}
+        />
     );
 }
 
-function FloatingShape() {
-    const mesh = useRef(null);
+function ProfessionalCore() {
+    const mesh = useRef();
+
     useFrame((state) => {
         const t = state.clock.getElapsedTime();
         if (mesh.current) {
-            mesh.current.rotation.x = Math.cos(t / 4) / 2;
-            mesh.current.rotation.y = Math.sin(t / 4) / 2;
-            mesh.current.position.y = (1 + Math.sin(t / 1.5)) / 10;
+            mesh.current.rotation.x = t * 0.2;
+            mesh.current.rotation.y = t * 0.3;
         }
     });
+
     return (
-        <Float speed={1.5} rotationIntensity={0.2} floatIntensity={0.5}>
-            <mesh ref={mesh} position={[1, 0, 0]} scale={0.4}>
-                <icosahedronGeometry args={[1, 0]} />
-                <meshStandardMaterial color="#8b5cf6" wireframe transparent opacity={0.3} />
+        <Float speed={2} rotationIntensity={0.5} floatIntensity={1}>
+            <mesh ref={mesh} position={[0, 0, 0]}>
+                <sphereGeometry args={[1, 64, 64]} />
+                <MeshDistortMaterial
+                    color="#2563eb"
+                    speed={3}
+                    distort={0.4}
+                    radius={1}
+                    metalness={0.8}
+                    roughness={0.2}
+                    emissive="#3b82f6"
+                    emissiveIntensity={0.5}
+                />
             </mesh>
         </Float>
     );
 }
 
+function Rig() {
+    const { camera, mouse } = useThree();
+    const vec = new THREE.Vector3();
+
+    return useFrame(() => {
+        camera.position.lerp(vec.set(mouse.x * 2, mouse.y * 1, 10), 0.05);
+        camera.lookAt(0, 0, 0);
+    });
+}
+
 const Scene = () => {
     return (
-        <Canvas camera={{ position: [0, 0, 1] }}>
-            <ambientLight intensity={0.5} />
-            <ParticleField />
-            <Stars radius={100} depth={50} count={3000} factor={4} saturation={0} fade speed={1} />
-            <FloatingShape />
-        </Canvas>
+        <div className="w-full h-full">
+            <Canvas shadows dpr={[1, 2]}>
+                <PerspectiveCamera makeDefault position={[0, 0, 10]} fov={50} />
+                <ambientLight intensity={0.5} />
+                <spotLight position={[10, 10, 10]} angle={0.15} penumbra={1} intensity={1} castShadow />
+                <pointLight position={[-10, -10, -10]} intensity={0.5} />
+
+                <HolographicGrid />
+                <ProfessionalCore />
+                <Rig />
+
+                <fog attach="fog" args={["#020617", 5, 20]} />
+            </Canvas>
+        </div>
     );
 };
 
