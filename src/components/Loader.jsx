@@ -21,7 +21,7 @@ const Loader = () => {
                         initial={{ y: 20, opacity: 0 }}
                         animate={{ y: 0, opacity: 1 }}
                     >
-                        Sonali
+                        Sravani
                     </motion.span>
                     <motion.span
                         className="text-4xl font-bold text-accent tracking-tighter"
@@ -29,7 +29,7 @@ const Loader = () => {
                         animate={{ y: 0, opacity: 1 }}
                         transition={{ delay: 0.1 }}
                     >
-                        Priya
+                        Teja
                     </motion.span>
                 </motion.div>
 

@@ -32,7 +32,7 @@ const Hero = () => {
                     transition={{ duration: 1, delay: 0.7 }}
                     className="text-5xl md:text-7xl lg:text-8xl font-extrabold tracking-tight text-white mb-6 leading-tight"
                 >
-                    Sonali Priya
+                    Sravani Teja
                 </motion.h1>
 
                 <motion.div
@@ -42,7 +42,7 @@ const Hero = () => {
                     className="mb-8"
                 >
                     <p className="text-xl md:text-2xl text-white font-medium mb-2">
-                        Front-end Developer & CMO, Stackvil Technologies Pvt Ltd
+                        CMO, Stackvil Technologies Pvt Ltd
                     </p>
                     <p className="text-lg text-gray-400 font-light">
                         Building scalable digital products for real businesses.
@@ -72,7 +72,7 @@ const AboutPreview = () => (
         <div className="max-w-4xl mx-auto px-6 text-center">
             <h2 className="text-3xl font-bold text-white mb-6">Passionate Developer</h2>
             <p className="text-gray-400 text-lg leading-relaxed mb-8">
-                As a Front-end Developer & CMO at Stackvil Technologies, I specialize in building robust, scalable, and high-performance digital solutions. I combine technical expertise with a keen eye for design to deliver exceptional user experiences.
+                As a CMO at Stackvil Technologies, I specialize in building robust, scalable, and high-performance digital solutions. I combine technical expertise with a keen eye for design to deliver exceptional user experiences.
             </p>
             <Link to="/projects" className="text-accent hover:text-white font-medium transition-colors inline-flex items-center gap-2">
                 View All Projects <ArrowRight size={16} />
@@ -264,7 +264,7 @@ const Contact = () => {
                     <p className="text-xl text-gray-400 mb-12 max-w-2xl mx-auto">
                         Ready to elevate your digital presence? I am currently accepting new enterprise contracts and freelance opportunities.
                     </p>
-                    <a href="mailto:contact@sonali.dev" className="inline-block px-10 py-5 bg-accent text-white font-bold rounded-full text-lg shadow-[0_0_40px_-10px_rgba(139,92,246,0.5)] hover:shadow-[0_0_60px_-10px_rgba(139,92,246,0.7)] hover:scale-105 transition-all duration-300">
+                    <a href="mailto:lakamuthotisravani@gmail.com" className="inline-block px-10 py-5 bg-accent text-white font-bold rounded-full text-lg shadow-[0_0_40px_-10px_rgba(139,92,246,0.5)] hover:shadow-[0_0_60px_-10px_rgba(139,92,246,0.7)] hover:scale-105 transition-all duration-300">
                         Start a Project
                     </a>
                 </motion.div>

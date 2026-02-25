@@ -59,7 +59,7 @@ const ContactPage = () => {
                             </div>
                             <div>
                                 <h3 className="text-gray-400 text-sm font-medium uppercase tracking-wider">Call Us</h3>
-                                <p className="text-white text-lg font-semibold">+91 91823 50557</p>
+                                <p className="text-white text-lg font-semibold">+91 79814 35392</p>
                             </div>
                         </GlassCard>
 
@@ -79,7 +79,7 @@ const ContactPage = () => {
                             </div>
                             <div>
                                 <h3 className="text-gray-400 text-sm font-medium uppercase tracking-wider">Email</h3>
-                                <p className="text-white text-lg font-semibold">sonalipriya@stackvil.com</p>
+                                <p className="text-white text-lg font-semibold">lakamuthotisravani@gmail.com</p>
                             </div>
                         </GlassCard>
                     </div>
